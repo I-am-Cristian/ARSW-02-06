@@ -38,3 +38,15 @@ Go is superior to Java for massive concurrency because its goroutines are ultra-
 ## Conclusion regarding the number of threads
 
 Using few or many threads isn't inherently better; it depends on the type of task. For pure CPU-bound computing, it's best to use a small number of threads, equal to the number of processor cores, because more threads only add overhead without improving performance. For I/O tasks (network, disk, console), many threads are beneficial because while some wait, others work, making better use of the CPU. As a general rule: if your threads perform a lot of calculations, use few; if they wait a lot, use many.
+
+## Photographic Evidence
+
+**Java** 
+
+![alt text](Resources/javaconsola.png)
+![alt text](Resources/javaconsolaresultado.png)
+
+**Go**
+
+![alt text](Resources/goconsola.png)
+![alt text](Resources/goconsolaresultado.png)
